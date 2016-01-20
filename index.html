@@ -6,14 +6,23 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <div id="container">
+        <header>
+            <h1>Frogger Game</h1>
+            <!--<img src="images/frog.jpg" alt="Frog Image" width="212px" height="141px">-->
+            <p>This game is representation of the classic frogger game. Everytime you reach the top, you collect a star. You score after collectiong five starts. If you collide with the enemy you lose a point. Use the button on the bottom to select your character. </p>
+        </header>
+        <div id="game"></div>
+        <div id="controls">
+            <button type="button" id="changePlayer" onclick="selectPlayer();">Change Player</button>
+            <button type="button" id="enemy" onclick="selectPlayer();">Change Enemies</button>
+            <div id='score'>Score 0</div>
+        </div>
+        <script src="js/resources.js"></script>
+        <script src="js/engine.js"></script>
+        <script src="js/app.js"></script>
+    </div>    
+  
 
-    <script src="js/resources.js"></script>
-    <script src="js/engine.js"></script>
-    <script src="js/app.js"></script>
-    <button type="button" onclick="selectPlayer();">Change Player</button>
-
-    <div id='result'>
-        	Score 0
-    </div>
 </body>
 </html>

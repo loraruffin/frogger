@@ -4,10 +4,8 @@ function selectPlayer(){
 
     var allPlayers = ['images/char-boy.png','images/char-cat-girl.png', 'images/char-horn-girl.png','images/char-pink-girl.png',
         'images/char-princess-girl.png'];
-
 	player.sprite = allPlayers[player.player];
     player.player = (player.player+1) % 5;
-    //console.log
 };
 
 
@@ -77,7 +75,7 @@ var Player = function(x,y) {
 };
 
 Player.prototype.update = function() {
-    var result = document.getElementById('result');
+    var result = document.getElementById('score');
     result.innerHTML = ('Score ' + this.score);
 };
 
@@ -145,8 +143,8 @@ Player.prototype.handleInput = function(keyCode) {
 // Place the player object in a variable called player
 
 var player = new Player(202,400);
-var allEnemies = [new Enemy() ];
-
+//var allEnemies = [new Enemy() ];
+var allEnemies = [];
 // This listens for key presses and sends the keys to your
 // Player.handleInput() method. You don't need to modify this.
 document.addEventListener('keyup', function(e) {
