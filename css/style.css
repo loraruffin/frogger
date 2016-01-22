@@ -51,9 +51,10 @@ button{
 	font-family:Arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 24px;
+	padding:6px 18px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #aade7c;
+	width: 155px;
 }
 button:hover {
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a));
@@ -71,11 +72,11 @@ button:active {
 	top:1px;
 }
 
-button#changePlayer{
+button#addEnemy{
 	float: left;
 }
 
-button#enemy{
+button#removeEnemy{
 	float:right;
 }
 
@@ -101,6 +102,7 @@ button#enemy{
 	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #99a192;
+	margin-top: 20px;
 }
 
 
