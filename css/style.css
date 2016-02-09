@@ -7,7 +7,7 @@ body {
    text-align: center;
    background-color: grey;
  }
-  
+
  #container{
  	margin: 3% auto;
  	max-width: 900px;
@@ -105,10 +105,19 @@ button#removeEnemy{
 	margin-top: 20px;
 }
 
+@media screen and (max-height: 750px){
+	header{
+		display:none;
+		}
+
+	#myCanvas{
+		height: 550px;
+	}
+}
 
 
 
-	
+
 
 
 
